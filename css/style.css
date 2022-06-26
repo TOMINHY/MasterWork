@@ -1,11 +1,220 @@
 /* GLOBAL */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,body{
+html,
+body {
     font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+
+@media (min-width: 1280px) {
+    .container {
+      max-width: 1200px;
+    }
+  }
+
+
+/*-- toggle switch --*/
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.theme-switch-wrapper em {
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.theme-switch {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+/*-- //toggle switch --*/
+/*-- dark and light mode styling --*/
+.mode-container {
+    width: 24px;
+    height: 24px;
+    padding: 1px 0;
+}
+
+.gg-sun {
+    position: relative;
+    transform: scale(var(--ggs, 1));
+    height: 24px;
+    background: linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 5px -6px/2px 6px, linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 5px 14px/2px 6px, linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat -8px 5px/6px 2px, linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 14px 5px/6px 2px;
+    border-radius: 100px;
+    box-shadow: inset 0 0 0 2px;
+    border: 6px solid transparent;
+}
+
+.gg-moon {
+    overflow: hidden;
+    position: relative;
+    transform: rotate(-135deg) scale(var(--ggs, 1));
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-bottom: 2px solid transparent;
+}
+
+.gg-moon,
+.gg-moon:after {
+    display: block;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.gg-moon:after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 18px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    top: 8px;
+    left: 2px;
+}
+
+.gg-sun,
+.gg-sun:after,
+.gg-sun:before {
+    box-sizing: border-box;
+    display: block;
+    width: 24px;
+}
+
+.gg-sun:after,
+.gg-sun:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    border-right: 4px solid;
+    border-left: 4px solid;
+    left: -6px;
+    top: 5px;
+}
+
+.gg-sun:before {
+    transform: rotate(-45deg);
+}
+
+.gg-sun:after {
+    transform: rotate(45deg);
+}
+.mode-container{
+    width: 24px;
+    height: 24px;
+    padding: 1px 0;
+}
+.mode-container i.gg-sun {
+    display: none;
+    color: #eee;
+}
+
+.mode-container i.gg-moon {
+    display: block;
+    color: #eee;
+}
+
+input:checked+.mode-container i.gg-sun {
+    display: block;
+}
+
+input:checked+.mode-container i.gg-moon {
+    display: none;
+}
+
+
+/* HEADER */
+.header__banner {
+    background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url(../img/banner1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: initial;
+    min-height: 700px;
+    background-attachment: fixed;
+}
+
+.header__centent{
+    padding: 40px 0 20px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+.header__right{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    align-items: center;
+}
+.header__logo .logo__diner{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.search__bar {
+    display: flex;
+}
+
+.search__relative {
+    position: relative;
+}
+
+.search__input {
+    display: flex;
+    flex: 1;
+    padding: 10px 35px 10px 20px;
+    height: 45px;
+    font-size: 16px;
+    color: rgb(22 28 45 / 70%);
+    border: none;
+    font-weight: 400;
+    border-radius: 5px;
+    position: relative;
+    right: 0;
+    background: #fff;
+    outline: 0;
+    border: 1px solid #fff;
+}
+
+.search__icon {
+    position: absolute;
+    right: 20px;
+    font-size: 15px;
+    top: 12px;
+    cursor: pointer;
+    color: rgb(91 96 108);
+}
+button#trigger-overlay {
+	outline: none;
+	border: none;
+	background: none;
+	text-align: center;
+	color: #fbfdfb;
+	font-size: 1.95em;
+	padding: 0 8px;
 }
