@@ -12,16 +12,25 @@ body {
     color: var(--font-color);
     font-family: 'Quicksand', sans-serif;
 }
+body{
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
  a , a:hover{
     text-decoration: none;
  }
 
-
-@media (min-width: 1280px) {
-    .container {
-      max-width: 1200px;
-    }
+ul , li{
+  list-style: none;
 }
+
 
 
 /*-- toggle switch --*/
@@ -169,14 +178,14 @@ body {
 .header__centent{
     padding: 40px 0 20px;
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
     align-items: center;
     gap: 20px;
 }
 .header__right{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 20px;
+    gap: 15px;
     align-items: center;
 }
 h1 a.logo__diner {
@@ -185,7 +194,6 @@ h1 a.logo__diner {
     font-size: 36px;
     font-weight: 700;
     color: #fff;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .search__bar {
     display: flex;
@@ -193,41 +201,106 @@ h1 a.logo__diner {
 
 .search__relative {
     position: relative;
+    flex:1;
 }
 
-.search__input {
-    display: flex;
-    flex: 1;
-    padding: 10px 50px 10px 20px;
-    height: 45px;
-    font-size: 16px;
-    color: rgb(22 28 45 / 70%);
-    border: none;
-    font-weight: 400;
-    border-radius: 5px;
-    position: relative;
-    right: 0;
-    background: #fff;
-    outline: 0;
-    border: 1px solid #fff;
+#home .form-control{
+  box-shadow: none;
+  border-color:transparent;
+  padding: 10px 50px 10px 20px;
+  height: 45px;
+  font-size: 16px;
+  color: rgb(22 28 45 / 70%);
+  border: none;
+  font-weight: 400;
+  
+}
+.nav__bars-btn{
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  font-size: 1.95rem;
+  text-align: center;
+  line-height: 40px;
+  margin: 0;
 }
 
 .search__icon {
     position: absolute;
     right: 20px;
     font-size: 15px;
-    top: 12px;
+    top: 15px;
     cursor: pointer;
     color: rgb(91 96 108);
 }
-button#trigger-overlay {
-	outline: none;
-	border: none;
-	background: none;
-	text-align: center;
-	color: #fbfdfb;
-	font-size: 1.95em;
-	padding: 0 8px;
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(6 3 0 / 77%);
+  display: none;
+  animation: menu linear 0.3s;
+  transition: all 0.5s ;
+  z-index: 100;
+}
+
+.overlay__close{
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: #ff6600;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.overlay nav {
+  position: relative;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.overlay ul{
+  display: block;
+  height: 100%;
+}
+
+.overlay li {
+  line-height: 48px;
+}
+
+.overlay ul li a{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+  transition: all 0.2s;
+}
+.overlay ul li a:hover, .overlay ul li a:focus {
+  color: #ff6600;
+}
+	
+.nav__input:checked ~ .overlay{
+  display: block;
+  animation: menu linear 0.3s;
+}
+
+@keyframes menu{
+  0%{
+    transform: scale(0.2);
+  }
+  50%{
+    transform: scale(0.8);
+  }
+  100%{
+    transform: scale(1);
+  }
 }
 
 .header__text{
@@ -268,3 +341,10 @@ button#trigger-overlay {
     margin-left: 8px;
     font-weight: bold;
 }
+
+
+   
+
+  
+
+

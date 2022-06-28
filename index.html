@@ -15,7 +15,7 @@
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <!-- BS4 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -25,56 +25,74 @@
 
 <body>
     <!-- HEADER -->
-    <header>
-        <div class="header__banner" id="home">
-            <div class="container">
-                <div class="header__centent">
-                    <div class="header__logo">
+    <section class="header__banner" id="home">
+        <div class="container">
+            <div class="header__centent">
+                <div class="header__logo">
                     <h1>
                         <a class="logo__diner" href="#">Diner</a>
                     </h1>
+                </div>
+                <div class="header__right">
+                    <div class="search__bar">
+                        <form class="form-inline  search__relative">
+                            <input class="form-control" type="search" placeholder="Search here.." aria-label="Search">
+                            <span class="fa fa-search search__icon"></span>
+                        </form>
                     </div>
-                    <div class="header__right">
-                        <div class="search__bar">
-                                <form class="search__relative">
-                                    <input type="search" class="search__input" name="search"
-                                        placeholder="Search here.." onload="equalWidth()" required>
-                                    <span class="search__icon"><i class="fa-solid fa-magnifying-glass"></i></span>
-                                </form>
-                        </div>
-                        <div class="theme text-center">
-                                <div class="theme__position">
-                                    <nav class="navigation">
-                                        <div class="theme-switch-wrapper">
-                                            <label class="theme-switch" for="checkbox">
-                                                <input type="checkbox" id="checkbox">
-                                                <div class="mode-container">
-                                                    <i class="gg-sun"></i>
-                                                    <i class="gg-moon"></i>
-                                                </div>
-                                            </label>
+                    <div class="theme text-center">
+                        <div class="theme__position">
+                            <nav class="navigation">
+                                <div class="theme-switch-wrapper">
+                                    <label class="theme-switch" for="checkbox">
+                                        <input type="checkbox" id="checkbox">
+                                        <div class="mode-container">
+                                            <i class="gg-sun"></i>
+                                            <i class="gg-moon"></i>
                                         </div>
-                                    </nav>
+                                    </label>
                                 </div>
-                        </div>
-                        <div class="nav__button text-center">
-                                <button id="trigger-overlay" type="button">
-                                    <i class="fa-solid fa-bars"></i>
-                                </button>
+                            </nav>
                         </div>
                     </div>
-                    <div class="header__text">
-                        <h3>The Only Thing We Love More Than Food Is You!</h3>
-                        <p class="pr-lg-5 mt-md-4 mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.Ea ipsum sed consequuntur illum facere.</p>
 
-                        <button class="btn__white">Read More<i class="fa-solid fa-chevron-right"></i></button>
+                    <label for="nav-input" class="nav__bars-btn">
+                        <i class="fa-solid fa-bars"></i>               
+                    </label>
+                    <input type="checkbox" hidden class="nav__input" id="nav-input">
+                    <div class="overlay overlay-scale">
+                        <label for="nav-input" class="overlay__close">
+                            <i class="fa fa-times"></i>
+                        </label>
+                        <nav class="text-center">
+                            <ul>
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">404</a></li>
+                                <li><a href="#">Landing Page</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Shot Codes</a></li>
+                                <li><a href="#">Email</a></li>
+                            </ul>
+                        </nav>
                     </div>
+                </div>
+               
+                <div class="header__text">
+                    <h3>The Only Thing We Love More Than Food Is You!</h3>
+                    <p class="pr-lg-5 mt-md-4 mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                        vitae sit.Ea ipsum sed consequuntur illum facere.</p>
+                    <button class="btn__white">Read More<i class="fa-solid fa-chevron-right"></i></button>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
     <!-- ABOUT -->
-    <section class="about"></section>
+    <section class="about">
+       
+    </section>
     <!-- FEEDBACK -->
     <section class="feedback"></section>
     <!-- CATEGORIES -->
@@ -93,12 +111,10 @@
     <footer></footer>
 
 
-
-
-
-    <!-- JQUERY -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- BS4  JS-->
+    <!-- BS4 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
