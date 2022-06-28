@@ -23,11 +23,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="myBody">
     <!-- HEADER -->
     <section class="header__banner" id="home">
-        <div class="container">
-            <div class="header__centent">
+       
+            <div class="header__centent container">
                 <div class="header__logo">
                     <h1>
                         <a class="logo__diner" href="#">Diner</a>
@@ -40,20 +40,11 @@
                             <span class="fa fa-search search__icon"></span>
                         </form>
                     </div>
-                    <div class="theme text-center">
-                        <div class="theme__position">
-                            <nav class="navigation">
-                                <div class="theme-switch-wrapper">
-                                    <label class="theme-switch" for="checkbox">
-                                        <input type="checkbox" id="checkbox">
-                                        <div class="mode-container">
-                                            <i class="gg-sun"></i>
-                                            <i class="gg-moon"></i>
-                                        </div>
-                                    </label>
-                                </div>
-                            </nav>
-                        </div>
+                    <div class="change__theme">
+                         <button class="btn" id="switchButton"  title="Click to switch theme">
+                            <i class="far fa-moon"></i>
+                            <i class="far fa-sun"></i>
+                          </button>
                     </div>
 
                     <label for="nav-input" class="nav__bars-btn">
@@ -79,7 +70,7 @@
                         </nav>
                     </div>
                 </div>
-               
+            
                 <div class="header__text">
                     <h3>The Only Thing We Love More Than Food Is You!</h3>
                     <p class="pr-lg-5 mt-md-4 mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
@@ -87,7 +78,7 @@
                     <button class="btn__white">Read More<i class="fa-solid fa-chevron-right"></i></button>
                 </div>
             </div>
-        </div>
+       
     </section>
     <!-- ABOUT -->
     <section class="about">
