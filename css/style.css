@@ -281,7 +281,6 @@ h1 a.logo__diner {
 
 .about__right p {
   font-size: 18px;
-  color: #161c2db3;
   line-height: 28px;
   margin: 0;
 }
@@ -322,7 +321,7 @@ h1 a.logo__diner {
 .feedback__bg {
   margin: 48px;
   padding: 38px;
-  
+
 }
 
 .feedback__content .title h6 {
@@ -383,4 +382,57 @@ h1 a.logo__diner {
 
 .feedback__item .icon:hover i {
   color: #f8b195;
+}
+
+/* CATEGORIES */
+.caterories__content .title {
+  text-align: center;
+  padding: 30px 0;
+}
+.caterories__content .categories__item{
+  margin: 15px 0;
+}
+.categories__itemimg img {
+  max-width: 100%;
+  position: relative;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: all .4s;
+}
+.categories__itemimg img:hover{
+  opacity: 0.85;
+}
+
+.categories__price {
+  left: auto;
+  bottom: 12px;
+  width: 92%;
+  padding: 37px 37px 10px;
+  position: absolute;
+  color: #fff;
+  transform: translate3d(0, 10%, 0);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.53) 69%, rgba(0, 0, 0, 0.76) 100%);
+  border-radius: 6px;
+}
+
+.categories__price h4 {
+  font-size: 22px;
+  color: #fff;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.categories__price h6 {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 25px;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.categories__price span {
+  font-weight: 600;
+  color: rgb(234 184 19);
+  font-size: 18px;
+  letter-spacing: 1px;
 }
