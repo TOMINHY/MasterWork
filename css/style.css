@@ -262,14 +262,14 @@ h1 a.logo__diner {
 
 .header__text button {
   padding: 15px 45px;
-  margin: 32px 8px 0 0;
+  margin: 0 8px 0 0;
   font-size: 16px;
   color: #fff;
   background-color: transparent;
   border: 2px solid #fff;
   border-radius: 5px;
   font-weight: bold;
-  transition: all .5s;
+  transition: all .3s ease-in-out;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -301,35 +301,32 @@ h1 a.logo__diner {
 }
 
 /* FEEDBACK */
-
-.feedback .feedback__imgfood.col-6,
-.feedback .feedback__content.col-6 {
-  padding: 0;
-}
-
-.feedback__content {
+.feedback{
   background-color: rgb(255 102 0);
 }
 
-.feedback__imgfood img {
-  height: 100%;
+.feedback__imgfood{
+  background-image: url(../img/banner3.jpeg);
+  min-height:600px ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
 }
 
-.feedback__imgfood::after {
+.feedback__imgfood::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
   background: rgb(16 15 19 / 46%);
 }
 
 .feedback__bg {
-  margin: 48px;
-  padding: 38px;
-
+  padding: 48px;
 }
 
 .feedback__content .title h6 {
@@ -399,17 +396,20 @@ h1 a.logo__diner {
 }
 .caterories__content .title {
   text-align: center;
-  padding: 30px 0;
 }
 .caterories__content .categories__item{
   margin: 15px 0;
 }
-.categories__itemimg img {
-  max-width: 100%;
+.categories__itemimg{
   position: relative;
+}
+
+.categories__itemimg img {
+  width: 100%;
   object-fit: cover;
   border-radius: 6px;
   transition: all .4s;
+  display: block;
 }
 .categories__itemimg img:hover{
   opacity: 0.85;
@@ -417,9 +417,10 @@ h1 a.logo__diner {
 
 .categories__price {
   left: auto;
-  bottom: 12px;
-  width: 92%;
-  padding: 37px 37px 10px;
+  bottom: 3%;
+  width: 100%;
+  height: 30%;
+  padding: 50px 37px 10px;
   position: absolute;
   color: #fff;
   transform: translate3d(0, 10%, 0);
@@ -504,7 +505,103 @@ h1 a.logo__diner {
   color: rgb(255 102 0);
 }
 
+/************** RESPONSIVE ***********/
+/* sm */
+@media screen and (max-width: 575.98px) { 
+  .search__bar {
+    display: none;
+  }
+  .header__banner{
+    min-height: 600px;
+    margin-top: 60px;
+  }
+  .header__text h3{
+    font-size: 40px;
+    line-height: 50px;
+  }
+  
+  .title h6{
+    font-size: 16px;
+    letter-spacing: .5px;
+  }
+  .title h3{
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 24px;
+  }
+  .about__right p{
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .feedback__imgfood{
+    min-height: 200px;
+  }
+  .feedback__bg{
+    padding: 16px;
+  }
+  .feedback__content .title p{
+    font-size: 16px;
+    margin: 16px 0;
+  }
+  .feedback__item{
+    gap: 20px 10px;
+  }
+  .feedback .feedback__item a{
+    font-size: 18px;
+  }
+  .feedback__item p{
+    font-size: 16px;
+    line-height: 26px;
+  }
+  
+  .categories__price h4{
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .categories__price h6{
+    margin: 0;
+   
+  }
+  .categories__price span{
+    font-size: 16px;
+  }
+  .categories__price {
+    bottom: 5%;
+    height: 50%;
+    padding: 50px 24px 10px;
+    position: absolute;
+    color: #fff;
+    transform: translate3d(0, 10%, 0);
+    border-radius: 6px;
 
+  }
+  .features__content p{
+    font-size: 16px;
+  }
+  .features__content h3{
+    font-size: 20px;
+  }
+  .features__boxbottom p{
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 0;
+  }
+
+}
+
+
+/* md */
+/* @media (max-width: 767.98px) { 
+
+} */
+/* lg */
+/* @media (max-width: 991.98px) { 
+
+} */
+
+/* @media (max-width: 1199.98px) {
+
+} */
 
 
  
