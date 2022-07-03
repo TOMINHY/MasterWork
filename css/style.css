@@ -419,7 +419,7 @@ h1 a.logo__diner {
   left: auto;
   bottom: 3%;
   width: 100%;
-  height: 30%;
+  height: 32%;
   padding: 50px 37px 10px;
   position: absolute;
   color: #fff;
@@ -511,10 +511,38 @@ h1 a.logo__diner {
   }
 }
 /************** RESPONSIVE ***********/
-
-/* sm */
-@media screen and (max-width: 575.98px) { 
-  .header__banner{
+@media screen and (max-width : 1190px) {
+  .header__text h3{
+    font-size: 48px;
+    line-height: 58px;
+  }
+}
+@media screen and (max-width: 992px) { 
+  .feedback__imgfood{
+    min-height: 200px;
+  }
+  .features__content h3{
+    font-size: 20px;
+  }
+  .header__text h3{
+    font-size: 44px;
+    line-height: 53px;
+  }
+  .title h6{
+    margin: 0;
+  }
+  .feedback__item{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 10px;
+    margin-top: 48px;
+  }
+  .feedback .feedback__item a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 800px){
+  .header__banner {
     min-height: 600px;
     margin-top: 60px;
   }
@@ -522,7 +550,43 @@ h1 a.logo__diner {
     font-size: 40px;
     line-height: 50px;
   }
-  
+
+}
+@media screen and (max-width: 767.98px) { 
+  .title h3{
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .title h6{
+    margin: 0;
+  }
+  .about__right{
+    margin-top: 16px;
+  }
+  .feedback__bg{
+    padding: 16px;
+  }
+  .categories__price h4{
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .categories__price span{
+    font-size: 16px;
+  }
+  .categories__price{
+    height: 40%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .search__bar {
+    display: none;
+  }
+}
+@media screen and (max-width: 575.98px) { 
+  .header__banner{
+    min-height: 600px;
+    margin-top: 60px;
+  }
   .title h6{
     font-size: 16px;
     letter-spacing: .5px;
@@ -589,82 +653,18 @@ h1 a.logo__diner {
     line-height: 26px;
     margin-bottom: 0;
   }
-
+  
 }
-@media screen and (max-width: 600px) {
-  .search__bar {
-    display: none;
-  }
-}
-/* md */
-@media screen and (max-width: 767.98px) { 
-  .title h3{
-    font-size: 32px;
-    line-height: 40px;
-  }
-  .title h6{
-    margin: 0;
-  }
-  .about__right{
-    margin-top: 16px;
-  }
-  .feedback__bg{
-    padding: 16px;
-  }
-  .categories__price h4{
-    font-size: 18px;
-    line-height: 28px;
-  }
-  .categories__price span{
-    font-size: 16px;
-  }
-  .categories__price{
-    height: 40%;
-  }
-}
-@media (max-width: 800px){
-  .header__banner {
-    min-height: 600px;
-    margin-top: 60px;
-  }
+@media screen and (max-width: 480px) {
   .header__text h3{
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 28px;
+    line-height: 38px;
   }
-
-}
-/*lg */
-@media screen and (max-width: 992px) { 
-  .feedback__imgfood{
-    min-height: 200px;
+  .header__text{
+    max-width: 500px;
+    margin-top: 30px;
   }
-  .features__content h3{
-    font-size: 20px;
-  }
-  .header__text h3{
-    font-size: 44px;
-    line-height: 53px;
-  }
-  .title h6{
-    margin: 0;
-  }
-  .feedback__item{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px 10px;
-    margin-top: 48px;
-  }
-  .feedback .feedback__item a {
-    font-size: 18px;
+  .header__banner{
+    min-height: 450px;
   }
 }
-
-@media screen and (max-width: 1080px) {
-  .title h3{
-    font-size: 32px;
-    line-height: 40px;
-    margin-bottom: 24px;
-  }
-}
-
- 
