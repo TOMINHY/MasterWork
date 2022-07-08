@@ -90,7 +90,48 @@ li {
 .dark #switchButton .fa-moon {
   display: none;
 }
-
+.dark .number {
+  background-color: #232220;
+}
+.dark .item__text {
+  background-color: #232220;
+} 
+.dark .blog {
+  background-color: #232220;
+}
+.dark .item__text .counter {
+  color: #eee;
+}
+.dark .card__background {
+  background-color: #282828;
+}
+.dark .card {
+  background-color: #282828;
+}
+.dark .card-title {
+  color: #eee;
+}
+.dark .card-text {
+  color: #c2d0da;
+}
+.dark .card-link{
+ color: #eee;
+}
+.dark .read{
+  color: #eee;
+}
+.dark .portcarousel {
+  background-color: #232220;
+}
+.dark .portcarousel q {
+  color:#eee ;
+}
+.dark .portcarousel p {
+  color:#c2d0da ;
+}
+.dark .footer__main {
+  background-color: #000000;
+}
 
 /* HEADER */
 .header__banner {
@@ -794,10 +835,14 @@ font-weight: 600;
   height: 30px;
   border-radius: 50%;
 }
+.card-body {
+padding: 15px 0;
+}
 .card-body a{
   text-decoration: none;
   font-weight: 700;
   color: #232121;
+  font-size: 20px;
 
 }
 
