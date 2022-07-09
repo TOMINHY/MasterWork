@@ -542,156 +542,6 @@ h1 a.logo__diner {
   color: rgb(255 102 0);
 }
 
-@media (min-width: 1280px) {
-  .container{
-    max-width:1200px;
-  }
-}
-/************** RESPONSIVE ***********/
-@media screen and (max-width : 1190px) {
-  .header__text h3{
-    font-size: 48px;
-    line-height: 58px;
-  }
-}
-@media screen and (max-width: 992px) { 
-  .feedback__imgfood{
-    min-height: 200px;
-  }
-  .features__content h3{
-    font-size: 20px;
-  }
-  .header__text h3{
-    font-size: 44px;
-    line-height: 53px;
-  }
-  .title h6{
-    margin: 0;
-  }
-  .feedback__item{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px 10px;
-    margin-top: 48px;
-  }
-  .feedback .feedback__item a {
-    font-size: 18px;
-  }
-}
-@media (max-width: 800px){
-  .header__banner {
-    min-height: 600px;
-    margin-top: 60px;
-  }
-  .header__text h3{
-    font-size: 40px;
-    line-height: 50px;
-  }
-
-}
-@media screen and (max-width: 767.98px) { 
-  .title h3{
-    font-size: 32px;
-    line-height: 40px;
-  }
-  .title h6{
-    margin: 0;
-  }
-  .about__right{
-    margin-top: 16px;
-  }
-  .feedback__bg{
-    padding: 16px;
-  }
-  .categories__price h4{
-    font-size: 18px;
-    line-height: 28px;
-  }
-  .categories__price span{
-    font-size: 16px;
-  }
-  .categories__price{
-    height: 40%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .search__bar {
-    display: none;
-  }
-}
-@media screen and (max-width: 575.98px) { 
-  .header__banner{
-    min-height: 600px;
-    margin-top: 60px;
-  }
-  .title h6{
-    font-size: 16px;
-    letter-spacing: .5px;
-  }
-  .title h3{
-    font-size: 30px;
-    line-height: 38px;
-    margin-bottom: 24px;
-  }
-  .about__right p{
-    font-size: 16px;
-    line-height: 26px;
-  }
-  .feedback__imgfood{
-    min-height: 200px;
-  }
-  .feedback__bg{
-    padding: 16px;
-  }
-  .feedback__content .title p{
-    font-size: 16px;
-    margin: 16px 0;
-  }
-  .feedback__item{
-    gap: 20px 10px;
-  }
-  .feedback .feedback__item a{
-    font-size: 18px;
-  }
-  .feedback__item p{
-    font-size: 16px;
-    line-height: 26px;
-  }
-  
-  .categories__price h4{
-    font-size: 18px;
-    line-height: 28px;
-  }
-  .categories__price h6{
-    margin: 0;
-   
-  }
-  .categories__price span{
-    font-size: 16px;
-  }
-  .categories__price {
-    bottom: 5%;
-    height: 50%;
-    padding: 50px 24px 10px;
-    position: absolute;
-    color: #fff;
-    transform: translate3d(0, 10%, 0);
-    border-radius: 6px;
-
-  }
-  .features__content p{
-    font-size: 16px;
-  }
-  .features__content h3{
-    font-size: 20px;
-  }
-  .features__boxbottom p{
-    font-size: 16px;
-    line-height: 26px;
-    margin-bottom: 0;
-  }
-  
-}
 /*middle  */
 .middle {
   background: url(../img/banner2.jpeg) no-repeat center;
@@ -830,9 +680,7 @@ h1 a.logo__diner {
   margin-left: -15px;
   display: flex;
   flex-wrap: wrap;
-  
 }
-/* tìm các thẻ là thẻ p con của number__item, thẻ p đầu tien */
 .number__item p:first-of-type{
   font-size: 2.6rem;
   font-weight: 600;
@@ -1079,10 +927,160 @@ padding: 15px 0;
   margin: 10px;
   cursor: pointer;
   transition: all .5s;
-  
 }
 .bt2 li:hover {
   color: #ff6600;
+}
+
+/************** RESPONSIVE ***********/
+@media (min-width: 1280px) {
+  .container{
+    max-width:1200px;
+  }
+}
+@media screen and (max-width : 1190px) {
+  .header__text h3{
+    font-size: 48px;
+    line-height: 58px;
+  }
+}
+@media screen and (max-width: 992px) { 
+  .feedback__imgfood{
+    min-height: 200px;
+  }
+  .features__content h3{
+    font-size: 20px;
+  }
+  .header__text h3{
+    font-size: 44px;
+    line-height: 53px;
+  }
+  .title h6{
+    margin: 0;
+  }
+  .feedback__item{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 10px;
+    margin-top: 48px;
+  }
+  .feedback .feedback__item a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 800px){
+  .header__banner {
+    min-height: 600px;
+    margin-top: 60px;
+  }
+  .header__text h3{
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+}
+@media screen and (max-width: 767.98px) { 
+  .title h3{
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .title h6{
+    margin: 0;
+  }
+  .about__right{
+    margin-top: 16px;
+  }
+  .feedback__bg{
+    padding: 16px;
+  }
+  .categories__price h4{
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .categories__price span{
+    font-size: 16px;
+  }
+  .categories__price{
+    height: 40%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .search__bar {
+    display: none;
+  }
+}
+@media screen and (max-width: 575.98px) { 
+  .header__banner{
+    min-height: 600px;
+    margin-top: 60px;
+  }
+  .title h6{
+    font-size: 16px;
+    letter-spacing: .5px;
+  }
+  .title h3{
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 24px;
+  }
+  .about__right p{
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .feedback__imgfood{
+    min-height: 200px;
+  }
+  .feedback__bg{
+    padding: 16px;
+  }
+  .feedback__content .title p{
+    font-size: 16px;
+    margin: 16px 0;
+  }
+  .feedback__item{
+    gap: 20px 10px;
+  }
+  .feedback .feedback__item a{
+    font-size: 18px;
+  }
+  .feedback__item p{
+    font-size: 16px;
+    line-height: 26px;
+  }
+  
+  .categories__price h4{
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .categories__price h6{
+    margin: 0;
+   
+  }
+  .categories__price span{
+    font-size: 16px;
+  }
+  .categories__price {
+    bottom: 5%;
+    height: 50%;
+    padding: 50px 24px 10px;
+    position: absolute;
+    color: #fff;
+    transform: translate3d(0, 10%, 0);
+    border-radius: 6px;
+
+  }
+  .features__content p{
+    font-size: 16px;
+  }
+  .features__content h3{
+    font-size: 20px;
+  }
+  .features__boxbottom p{
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 0;
+  }
+  
 }
 
 @media screen and (max-width: 480px) {
@@ -1099,7 +1097,7 @@ padding: 15px 0;
   }
   .categories__price {
     bottom: 5%;
-    height: 50%;
+    height: 55%;
     padding: 27px 24px 10px;
     position: absolute;
     color: #fff;
